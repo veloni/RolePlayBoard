@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'GolosUiRegular';
+  src: url('./GolosUi/golos-text_regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosUiBlack';
+  src: url('./GolosUi/golos-text_black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosUiBold';
+  src: url('./GolosUi/golos-text_bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosUiDemibold';
+  src: url('./GolosUi/golos-text_demibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosUiMedium';
+  src: url('./GolosUi/golos-text_medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GolosUiVf';
+  src: url('./GolosUi/golos-text_vf.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "GolosUiRegular", sans-serif;
+}

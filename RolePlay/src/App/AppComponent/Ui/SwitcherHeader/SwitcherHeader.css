@@ -1,0 +1,35 @@
+.switcher-header {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+}
+
+.switcher-header-line {
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.switcher-option {
+    align-items: center;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.switcher-option-active {
+    background: #158f6a!important;
+    color: white!important;
+    font-weight: bold!important;
+}

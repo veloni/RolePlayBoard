@@ -1,0 +1,5 @@
+/RolePlay/node_modules
+RolePlay/package-lock.json
+/RolePlay/electron/node_modules
+/RolePlay/electron/dist-electron
+/RolePlay/electron/package-lock.json

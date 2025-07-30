@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  color: var(--main-text-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: var(--background-active-color);
+}

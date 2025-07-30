@@ -1,0 +1,54 @@
+:root {
+  --main-black-color: #001221;
+  --secondary-text-color: #767676;
+  --black-color: #000000;
+  --base-color: #5776E7;
+  --second-color: #3953B2;
+  --second-hover-color: #253E9A;
+  --second-active-color: #5776E7;
+  --additional-color: #EEF1FF;
+  --error-color: #D0435B;
+  --error-background: #6b3c3c;
+  --border-color: #C3C7D5;
+  --background-color: #FFFFFF;
+  --background-second-color: #F7F7F7;
+  --background-hover-color: #E6E6E6;
+  --background-active-color: #DCDCDC;
+  --filled-color: #B9B9B9;
+  --second-filled-color: #f0f0f0;
+  --main-text-color: #343E48;
+  --disabled-color: #ececec;
+  --confirm-color: #00A693;
+  --confirm-hover-color: #048475;
+  --confirm-actve-color: #016F62;
+  --second-color-hover: #048475;
+  --confirm-color-hover: #2D4496;
+  --text-secondary-color: #6f7f94;
+  --text-aditonal-color: #767676;
+  --weekends-color: #ff7b59;
+  --warning-color: #f44336;
+  --selected-color: #D1E5F8;
+  --canceled-color: #EAEAEA;
+  --canceled-text-color: #A8A8A8;
+  --white: #FFFFFF;
+  --background-new-color: #f6f7fa;
+  --border-new-color: #0158A6;
+
+  --switch-background-color: #E4F3FF;
+
+  --base-gradient: linear-gradient(#6b8bd9, #3953b2);
+
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  --second-box-shadow: 0px 11px 15px rgba(57, 83, 178, 0.10);
+  --full-box-shadow:
+    0 -4px 4px -3px rgba(0, 0, 0, 0.1),
+    -5px 0 5px -3px rgba(0, 0, 0, 0.1),
+    5px 0 5px -3px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1);
+
+  --trends-table-grid-columns: repeat(24, 4.16%);
+  --trends-height: 150px;
+
+  --appointment-cell-min-height: 50px;
+  --appointment-cell-height: 50px;
+}

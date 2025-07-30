@@ -1,0 +1,222 @@
+.aside-blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-loop {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  z-index: 1000000;
+}
+
+.app {
+  span {
+    color: black !important;
+  }
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eef1ff;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  &__main {
+    max-height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    background-color: darkolivegreen;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid grey;
+    min-width: 250px;
+    max-width: 250px;
+    background-color: darkslategray;
+    color: black;
+    padding: 15px 5px;
+    margin: 5px;
+    flex-shrink: 0;
+
+    span {
+      margin: 5px 0;
+      height: 25px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: grey;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.custom-native-audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 12px 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-top: 1px solid rgba(142, 45, 226, 0.3);
+}
+
+.player-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 0 10px;
+}
+
+.track-name {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.track-time {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-btn {
+  background: rgba(142, 45, 226, 0.2);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.control-btn:hover {
+  background: rgba(142, 45, 226, 0.5);
+  transform: scale(1.1);
+}
+
+.control-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Основные стили аудиоплеера */
+.styled-audio-element {
+  flex-grow: 1;
+  height: 50px;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+/* Контейнер элементов управления */
+.styled-audio-element::-webkit-media-controls-enclosure {
+  background: linear-gradient(to right, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8)) !important;
+  border-radius: 25px;
+  padding: 0 15px;
+  border: none !important;
+}
+
+/* Панель управления */
+.styled-audio-element::-webkit-media-controls-panel {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 20px;
+  backdrop-filter: blur(5px);
+}
+
+.styled-audio-element::-webkit-media-controls-play-button:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 12px;
+  border-color: transparent transparent transparent white;
+  margin-left: 10px;
+}
+
+/* Таймлайн и ползунок */
+.styled-audio-element::-webkit-media-controls-timeline {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 4px;
+  margin: 0 15px;
+}
+
+.styled-audio-element::-webkit-media-controls-timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50%;
+  background: #8e2de2;
+  box-shadow: 0 0 5px rgba(142, 45, 226, 0.8);
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Отображение времени */
+.styled-audio-element::-webkit-media-controls-current-time-display,
+.styled-audio-element::-webkit-media-controls-time-remaining-display {
+  color: white;
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Кнопка mute и громкость */
+.styled-audio-element::-webkit-media-controls-mute-button {
+  color: white;
+  opacity: 0.8;
+}
+
+.styled-audio-element::-webkit-media-controls-volume-slider {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height: 4px;
+  margin-left: 8px;
+}
